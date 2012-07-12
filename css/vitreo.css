@@ -1,0 +1,44 @@
+.navbar .nav > li > a {
+	border:none;
+}
+
+#message{
+	margin-bottom:40px;
+}
+/* typography */
+
+h1,h2,h3,h4{
+	margin-bottom:10px;
+	text-align: justify;
+}
+
+#landing h1{
+	font-size:87px;
+	line-height: 70px;
+	text-align:center;
+	margin-bottom:40px;
+} 
+
+#landing h1.caps{
+		font-size:51px;
+	line-height: 47px;
+	margin-bottom:70px;
+
+}
+
+.caps{
+	text-transform:uppercase;
+}
+
+p{
+	text-align:justify;
+}
+
+.nav_links > li > a {
+	font-family: Lato;
+	font-weight:'300';
+	font-size: 18px
+}
+
+/* */
+
