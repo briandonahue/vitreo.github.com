@@ -5,6 +5,11 @@
 #message{
 	margin-bottom:40px;
 }
+
+.label{
+	position: relative;
+	bottom:6px;
+}
 /* typography */
 
 h1,h2,h3,h4{
