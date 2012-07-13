@@ -31,8 +31,21 @@
 	margin-top:50px;
 }
 
+#latest_case{
+	margin-top:50px;
+}
+
+#case_studies img{
+margin-bottom:30px;
+}
+
 
 /* typography */
+
+#case_studies h4 {
+	text-align: center;
+}
+
 
 #etymology h4 {
 text-align:center;
