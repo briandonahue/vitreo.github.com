@@ -3,14 +3,49 @@
 }
 
 #message{
-	margin-bottom:40px;
+	margin-bottom:70px;
 }
 
 .label{
 	position: relative;
 	bottom:6px;
+	margin-left:2px;
 }
+
+
+.happy{
+	width:69%;
+}
+
+#etymology, #about_us .well {
+	margin-top:60px;
+	margin-bottom:60px;
+}
+
+#solutions{
+	margin-top:50px;
+	margin-bottom:30px;
+}
+
+#case_studies{
+	margin-top:50px;
+}
+
+
 /* typography */
+
+#etymology h4 {
+text-align:center;
+}
+
+#about_us em {
+	font-style: normal;
+	font-weight: 400;
+}
+
+#about_us h1{
+	text-align:left;
+}
 
 h1,h2,h3,h4{
 	margin-bottom:10px;
@@ -37,6 +72,7 @@ h1,h2,h3,h4{
 
 p{
 	text-align:justify;
+	line-height:25px;
 }
 
 .nav_links > li > a {
