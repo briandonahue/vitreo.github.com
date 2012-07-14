@@ -1,4 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,300,900,900italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,700italic);
+
+
+
 /*!
  * Bootstrap v2.0.3
  *
@@ -404,6 +407,7 @@ h6 {
 }
 h4 {
   font-size: 21px;
+  line-height: 27px;
 }
 h4 small {
   font-size: 12px;
@@ -486,7 +490,7 @@ strong {
   font-weight: bold;
 }
 em {
-  font-style: italic;
+  font-weight: 400;
 }
 .muted {
   color: #999999;
@@ -2970,12 +2974,12 @@ input[type="submit"].btn.btn-mini {
   padding-left: 20px;
   padding-right: 20px;
   background-color: #a25030;
-  background-image: -moz-linear-gradient(top, #ce4213, #61645c);
+  /*background-image: -moz-linear-gradient(top, #ce4213, #61645c);
   background-image: -ms-linear-gradient(top, #ce4213, #61645c);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ce4213), to(#61645c));
   background-image: -webkit-linear-gradient(top, #ce4213, #61645c);
   background-image: -o-linear-gradient(top, #ce4213, #61645c);
-  background-image: linear-gradient(top, #ce4213, #61645c);
+  background-image: linear-gradient(top, #ce4213, #61645c);*/
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce4213', endColorstr='#61645c', GradientType=0);
   -webkit-border-radius: 4px;
@@ -3003,7 +3007,7 @@ input[type="submit"].btn.btn-mini {
   padding: 8px 20px 12px;
   margin-left: -20px;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1;
   color: #ffffff;
 }
@@ -3145,7 +3149,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .nav > li > a {
   float: none;
-  padding: 9px 10px 11px;
+  padding: 18px 10px 11px;
   line-height: 19px;
   color: #ffffff;
   text-decoration: none;
@@ -4148,9 +4152,13 @@ a.badge:hover {
   color: #ffffff;
 }
 .hero-unit {
+  width:95%;
   padding: 60px;
   margin-bottom: 30px;
   background-color: #eeeeee;
+  -moz-box-shadow:  0px 0px 5px 1px rgba(1, 1, 1, 0.1);  
+  -webkit-box-shadow:  0px 0px 5px 1px rgba(1, 1, 1, 0.1);
+  box-shadow:  0px 0px 5px 1px rgba(1, 1, 1, 0.1);
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -4163,11 +4171,20 @@ a.badge:hover {
   letter-spacing: -1px;
 }
 .hero-unit p {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 18px;
-  font-weight: 200;
   line-height: 27px;
   color: inherit;
 }
+
+.hero-unit p em{
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .pull-right {
   float: right;
 }
@@ -5140,7 +5157,7 @@ a.brand {
 }
 h1,
 h3 {
-  color: #62c729;
+  color: #1e5e0e;
 }
 h2,
 h4 {
@@ -5159,7 +5176,7 @@ blockquote small {
   font-style: italic;
 }
 .navbar .navbar-inner {
-  background-color: #2ac7c4;
+  background-color: #1E5E0E;/*
   background-image: -moz-linear-gradient(left, #62c729, #2ac7c4);
   background-image: -ms-linear-gradient(left, #62c729, #2ac7c4);
   background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#62c729), to(#2ac7c4));
@@ -5167,7 +5184,7 @@ blockquote small {
   background-image: -o-linear-gradient(left, #62c729, #2ac7c4);
   background-image: linear-gradient(left, #62c729, #2ac7c4);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#62c729', endColorstr='#2ac7c4', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#62c729', endColorstr='#2ac7c4', GradientType=1);*/
 }
 .navbar .nav > li > a {
   border-right: 1px solid #58b225;

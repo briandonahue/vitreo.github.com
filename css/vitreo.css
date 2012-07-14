@@ -1,3 +1,20 @@
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../img/BebasNeue-webfont.eot'),
+         url('../img/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../img/BebasNeue-webfont.woff') format('woff'),
+         url('../img/BebasNeue-webfont.ttf') format('truetype'),
+         url('../img/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	background-image: url(../img/bgnoise.gif);
+}
+
 .navbar .nav > li > a {
 	border:none;
 }
@@ -13,14 +30,11 @@
 }
 
 
-.happy{
-	width:69%;
-}
-
-#etymology, #about_us .well {
+#etymology {
 	margin-top:60px;
 	margin-bottom:60px;
 }
+
 
 #solutions{
 	margin-top:50px;
@@ -31,19 +45,39 @@
 	margin-top:50px;
 }
 
-#latest_case{
+.case{
 	margin-top:50px;
 }
+
 
 #case_studies img{
 margin-bottom:30px;
 }
 
+.lightbox-content img {
+	margin-bottom:0px !important;
+}
+
+#contact h1{
+	margin-bottom:50px !important;
+}
+
+#landing ul{
+	margin-top:10px;
+}
 
 /* typography */
 
+h1{
+	font-family: 'Bebas Neue', 'BebasNeueRegular', sans-serif; 
+}
+
 #case_studies h4 {
 	text-align: center;
+}
+
+#case_studies h4.subheadline   {
+	text-align: left;
 }
 
 
@@ -51,39 +85,39 @@ margin-bottom:30px;
 text-align:center;
 }
 
-#about_us em {
-	font-style: normal;
-	font-weight: 400;
-}
 
 #about_us h1{
 	text-align:left;
 }
 
 h1,h2,h3,h4{
-	margin-bottom:10px;
 	text-align: justify;
+	 text-shadow: 1px 0px 0px #f2f2f2;
 }
 
 #landing h1{
 	font-size:87px;
 	line-height: 70px;
 	text-align:center;
-	margin-bottom:40px;
+	margin-bottom:10px;
 } 
 
 #landing h1.caps{
-		font-size:51px;
-	line-height: 47px;
+	font-size:45px;
+	line-height: 40px;
 	margin-bottom:70px;
 
 }
 
-.caps{
+h1.caps{
 	text-transform:uppercase;
+	font-family: 'Lato', sans-serif;
+	font-size:35px !important;
+	letter-spacing: 0.27em;
 }
 
 p{
+	margin-top:20px;
 	text-align:justify;
 	line-height:25px;
 }
@@ -91,7 +125,7 @@ p{
 .nav_links > li > a {
 	font-family: Lato;
 	font-weight:'300';
-	font-size: 18px
+	font-size: 21px
 }
 
 /* */
