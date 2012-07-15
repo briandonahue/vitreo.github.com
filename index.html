@@ -18,9 +18,9 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/flexslider.css">
   <link rel="stylesheet" href="css/bootstrap-lightbox.css">
   <link rel="stylesheet" href="css/vitreo.css">
+
   <!-- More ideas for your head here: h5bp.com/d/head-Tips -->
   
   <!-- For the sticky footer -->
@@ -90,24 +90,27 @@
 				<div class="span6">		
 					<h3>The rule of three Vs</h3>
 					<!-- slider ! -->
-					<div class="flexslider">
-						<ul class="slides">
+					<div id="myCarousel" class="carousel slide">
+						<div class="carousel-inner">
 							<!-- slider items -->		
-							<li class="">
+							<div class="active item">
 								<h4>Vision</h4>
 								<p>Your business must be able to understand and anticipate the future needs of your market. Your business applications must be able to adapt to your needs. We strive to learn everything we can about your goals so that we can become a proactive partner in realizing them.<strong> Our primary objective is to understand and help your realize your vision.</strong></p>
-							</li>
-							<li class="">
+							</div>
+
+							<div class="item">
 								<h4>Velocity</h4>
 								<p>
 									Great vision is nothing without the determination and skill to act upon it, and speed-to-market is often critical. You have an idea, need, or goal and you need it to be realized within weeks, sometimes days — not months or years. <strong>Vitreo uses agile development processes to deliver innovative solutions to our clients and their customers as rapidly as possible</strong>.
 								</p>
-							</li>
-							<li class="">
+							</div>
+
+
+							<div class="item">
 								<h4>Validation</h4>
 								<p>You are investing in your vision and you need to be sure you will achieve your goals. Our clients are directly involved and aware of the status of their projects at all times. End user feedback is gathered early and often. <strong> Vitreo will provide you with the information and metrics you need to know your project will be successful — long before you've crossed the finish line.</strong></p>
-							</li>
-						</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 				<!-- end of slider --> 
@@ -281,7 +284,7 @@
 	  <!-- JavaScript at the bottom for fast page loading -->
 	
 	  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	  <script>window.jQuery || document.write('<script src="extras/h5bp/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
 	  <!-- scripts concatenated and minified via ant build script-->
@@ -293,7 +296,7 @@
 	  <!-- If you'd rather pick and choose, comment the above and uncomment what you need below -->
 	  <!--script type="text/javascript" src="js/bootstrap-alert.min.js"></script-->
 	  <!--script type="text/javascript" src="js/bootstrap-button.min.js"></script-->
-	  <script type="text/javascript" src="js/bootstrap-collapse.min.js"></script>
+	  <script type="text/javascript" src="js/bootstrap-collapse.js"></script>
 	  <!--script type="text/javascript" src="js/bootstrap-dropdown.min.js"></script-->
 	  <!--script type="text/javascript" src="js/bootstrap-modal.min.js"></script-->
 	  <!--script type="text/javascript" src="js/bootstrap-modal.min.js"></script-->
@@ -302,21 +305,17 @@
 	  <!--script type="text/javascript" src="js/bootstrap-scrollspy.min.js"></script-->
 	  <!--script type="text/javascript" src="js/bootstrap-tab.min.js"></script-->
 	  <!--script type="text/javascript" src="js/bootstrap-tooltip.min.js"></script-->
-	  <!--script type="text/javascript" src="js/bootstrap-transition.min.js"></script-->
-	  <!--script type="text/javascript" src="js/bootstrap-typeahead.min.js"></script-->
+	  <script type="text/javascript" src="js/bootstrap-transition.js"></script>
+	  <script type="text/javascript" src="js/bootstrap-carousel.js"></script>
 	  <script type="text/javascript" src="js/bootstrap-lightbox.js"></script>
-	  <script type='text/javascript' src="http://www.woothemes.com/wp-content/themes/woo6/includes/js/jquery.flexslider.min.js?ver=2.0"></script> <!-- test purposes to download for prod! -->
+
 
 
 		<script type="text/javascript" charset="utf-8">
-
+		
 
 		  $(document).ready(function() {
-		  	//slider 
-		    $('.flexslider').flexslider({
-		    	directionNav: false,
-		    	animation: 'slide'
-		    });
+		  	$('#myCarousel').carousel()
 		    // smart ass smoothscroll
 		    $('.navbar a, #message a').click(function(e){
 		    	e.preventDefault();
