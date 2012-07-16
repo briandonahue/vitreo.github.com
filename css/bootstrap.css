@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,900italic);
 
 
 
@@ -141,7 +141,7 @@ body {
   background-color: #ffffff;
 }
 a {
-  color: #26B2AF;
+  color: #9C6;
   text-decoration: none;
 }
 a:hover {
@@ -5113,7 +5113,6 @@ body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin-top:80px;
 }
 .container.main {
   overflow: auto;
@@ -5161,7 +5160,7 @@ h3 {
 }
 h2,
 h4 {
-  color: #26b2af;
+  color: #9C6;
 }
 h5 {
   text-transform: uppercase;
