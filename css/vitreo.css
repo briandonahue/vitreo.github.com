@@ -61,6 +61,10 @@ margin-bottom:30px;
 	  margin-top:120px;
 }
 
+.item{
+	height:206px;
+}
+
 /* typography */
 
 h1{
@@ -123,10 +127,7 @@ p{
 
 /* Responsive adjustments */
 
-@media (min-width: 240px) and (max-width:768px){
-	body{
-		font-size:10px;
-	}
+@media (min-width:100px) and (max-width: 990px){
 
 	.hero-unit{
 		padding:25px !important;
@@ -135,4 +136,17 @@ p{
 	#landing{
 		margin-top:30px;
 	}
+}
+
+@media (min-width: 320px) and (max-width:768px){
+	body{
+		font-size:10px;
+	}
+}
+
+@media (min-width: 150px) and (max-width:319.9px){
+	body{
+		font-size:8px;
+	}
+
 }
