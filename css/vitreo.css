@@ -5,6 +5,11 @@ body{
 	background-attachment: fixed;
 }
 
+@media (min-width: 320px) and (max-width:640px){
+	body{
+		font-size:10px;
+	}
+}
 
 .navbar .nav > li > a {
 	border:none;
@@ -91,16 +96,16 @@ h1,h2,h3,h4{
 }
 
 #landing h1{
-	font-size:80px;
+	font-size:6em;
 	font-weight:900;
-	line-height: 70px;
+	line-height: 1em;
 	text-align:center;
 	margin-bottom:10px;
 } 
 
 #landing h1.caps{
-	font-size:40px;
-	line-height: 40px;
+	font-size:3em;
+	line-height: 1em;
 	margin-bottom:70px;
 	font-weight:700;
 	text-transform:uppercase;
@@ -120,4 +125,3 @@ p{
 	font-size: 21px
 }
 
-/* slider styles */
