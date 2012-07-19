@@ -5,15 +5,6 @@ body{
 	background-attachment: fixed;
 }
 
-@media (min-width: 240px) and (max-width:640px){
-	body{
-		font-size:10px;
-	}
-
-	.hero-unit{
-		padding:25px !important;
-	}
-}
 
 .navbar .nav > li > a {
 	border:none;
@@ -129,3 +120,19 @@ p{
 	font-size: 21px
 }
 
+
+/* Responsive adjustments */
+
+@media (min-width: 240px) and (max-width:768px){
+	body{
+		font-size:10px;
+	}
+
+	.hero-unit{
+		padding:25px !important;
+	}
+
+	#landing{
+		margin-top:30px;
+	}
+}
