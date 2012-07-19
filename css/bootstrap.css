@@ -2974,14 +2974,6 @@ input[type="submit"].btn.btn-mini {
   padding-left: 20px;
   padding-right: 20px;
   background-color: #a25030;
-  /*background-image: -moz-linear-gradient(top, #ce4213, #61645c);
-  background-image: -ms-linear-gradient(top, #ce4213, #61645c);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ce4213), to(#61645c));
-  background-image: -webkit-linear-gradient(top, #ce4213, #61645c);
-  background-image: -o-linear-gradient(top, #ce4213, #61645c);
-  background-image: linear-gradient(top, #ce4213, #61645c);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce4213', endColorstr='#61645c', GradientType=0);*/
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
