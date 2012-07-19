@@ -127,7 +127,7 @@ p{
 
 /* Responsive adjustments */
 
-@media (min-width:100px) and (max-width: 990px){
+@media (min-width:100px) and (max-width: 939.99px){
 
 	.hero-unit{
 		padding:25px !important;
@@ -138,15 +138,29 @@ p{
 	}
 }
 
+@media (min-width:768.01px) and (max-width: 939.99px){
+	body{
+		font-size:9px;
+	}
+
+	#landing h1{
+		font-size: 5em;
+	}
+}
+
 @media (min-width: 320px) and (max-width:768px){
 	body{
 		font-size:10px;
 	}
+
+	#landing h1 {
+		font-size:3em;
+	}
 }
 
-@media (min-width: 150px) and (max-width:319.9px){
+@media (min-width: 150px) and (max-width:319.99px){
 	body{
-		font-size:8px;
+		font-size:6px;
 	}
 
 }
