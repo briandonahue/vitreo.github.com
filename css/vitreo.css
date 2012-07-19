@@ -5,9 +5,13 @@ body{
 	background-attachment: fixed;
 }
 
-@media (min-width: 320px) and (max-width:640px){
+@media (min-width: 240px) and (max-width:640px){
 	body{
 		font-size:10px;
+	}
+
+	.hero-unit{
+		padding:25px !important;
 	}
 }
 
