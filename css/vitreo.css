@@ -62,7 +62,7 @@ margin-bottom:30px;
 }
 
 .item{
-	height:206px;
+	height:215px;
 }
 
 /* typography */
@@ -146,6 +146,9 @@ p{
 	#landing h1{
 		font-size: 5em;
 	}
+	.item{
+	height:235px;
+	}
 }
 
 @media (min-width: 320px) and (max-width:768px){
@@ -154,13 +157,25 @@ p{
 	}
 
 	#landing h1 {
-		font-size:3em;
+		font-size:4em;
+	}
+
+	#landing h1.caps{
+		font-size:3em
+	}
+
+	.item{
+	height:350px;
 	}
 }
 
 @media (min-width: 150px) and (max-width:319.99px){
 	body{
 		font-size:6px;
+	}
+
+	.item{
+	height:470px;
 	}
 
 }
