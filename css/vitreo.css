@@ -1,8 +1,6 @@
 
 
 body{
-	background-image: url(../img/bullseye.svg)
-	background-position:center top;
 	background: url(../img/bullseye.svg) center top no-repeat, url(../img/bgnoise.gif);
 	background-attachment: fixed;
 }
@@ -64,7 +62,7 @@ margin-bottom:30px;
 }
 
 .item{
-	height:215px;
+	height:220px;
 }
 
 /* typography */
