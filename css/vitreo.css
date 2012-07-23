@@ -124,6 +124,8 @@ p{
 	font-size: 21px
 }
 
+/* For Wufoo Contact Form */
+#contact div.well { padding-bottom: 0px; }
 
 /* Responsive adjustments */
 
