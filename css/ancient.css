@@ -37,7 +37,12 @@ h2 {
 	width:405px;
 }
 
-	.cs_wrapper{
-		height:300px;
-		overflow:hidden;
-	}
+.cs_wrapper{
+	height:300px;
+	overflow:hidden;
+}
+
+h4.case{
+	min-height:54px;
+	height:54px; /* add 27px/line if you want to add new line of text */
+}
