@@ -36,3 +36,8 @@ h2 {
 .input-xxlarge {
 	width:405px;
 }
+
+	.cs_wrapper{
+		height:300px;
+		overflow:hidden;
+	}

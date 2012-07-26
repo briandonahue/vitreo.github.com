@@ -36,6 +36,7 @@ body{
 	margin-top:50px;
 }
 
+
 .case{
 	margin-top:20px;
 }
@@ -129,6 +130,21 @@ p{
 #contact  {padding-bottom: 20px; }
 
 /* Responsive adjustments */
+
+@media (min-width:1170px){
+
+
+	.cs_wrapper{
+		height:300px;
+		overflow:hidden;
+	}
+
+	h4.case{
+		min-height:54px;
+	}
+
+
+}
 
 @media (min-width:100px) and (max-width: 939.99px){
 
