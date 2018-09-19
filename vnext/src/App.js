@@ -100,6 +100,11 @@ class DesktopContainer extends Component {
               size='large'
             >
               <Container>
+                <Menu.Item as='a'>
+                <Image src="/images/logo.png" 
+                       style={{width: 140, height: 35 }}  
+                       verticalAlign='bottom'/>
+                </Menu.Item>
                 <Menu.Item as='a' active>
                   Home
                 </Menu.Item>

@@ -1,0 +1,14 @@
+/*-------------------
+    Brand Colors
+--------------------*/
+@darkGreen           : #1E5E0E;
+@lightGreen          : #9C6;
+
+@primaryColor        : @lightGreen; 
+@secondaryColor      : @darkGreen;
+
+
+@lightPrimaryColor   : @lightBlue;
+@lightSecondaryColor : @lightBlack;
+
+
