@@ -1,0 +1,4 @@
+baseURL = "https://vitreo.co/"
+languageCode = "en-us"
+title = "Vitreo, LLC"
+theme = "navigator"

@@ -1,0 +1,144 @@
+baseURL = "https://vitreo.co/"
+languageCode = "en-us"
+title = "Vitreo, LLC"
+theme = "navigator-hugo"
+
+# Build robots.txt file
+enableRobotsTXT = true
+# google analytics tracking id
+googleAnalytics = ""
+
+enableGitInfo = false
+pygmentsCodeFences = true
+
+# Multilangues setup
+# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
+defaultContentLanguageInSubdir = true
+DefaultContentLanguage = "en"
+
+# Site Params
+[params]
+    logo = "images/logo.png"
+
+    [[Params.listeLangues]]
+    code = "en"
+
+    ############# 2 - Site en ENGLISH
+    [Languages.en]
+    weight = 2
+    languageCode = "en-us"
+    title = "Vitreo, LLC"
+    dateFormat = "January 2, 2006"
+
+    home = "Home"
+    logo = "images/logo.png"
+    menufixed = false
+
+    footerDescription = "Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
+    footerServiceTitle = "Service"
+    footerQuicklinkTitle = "Quicklinks"
+    footerAboutTitle = "About"
+    footerSubscribeTitle = "Subscribe"
+
+    # Hero Area Section
+    [Languages.en.params.hero]
+        enable  = true
+        heading = "Continuous improvement through transparent communication."
+        description = "When your team communicates their goals, strengths, and weaknesses transparently, they can achieve levels of growth you never imagined."
+        button  = true
+        btnText = "Know More"
+        btnURL  = "https://themefisher.com/"
+        heroImgUrl = "images/istockphoto-519460958-612x612.jpg"
+
+    # About 2 Section
+    [Languages.en.params.aboutSm]
+        enable  = true
+        title   = "We have explored the digital landscape with passion for a long time"
+        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
+
+    # Blog Section On Homepage
+    [Languages.en.params.blog]
+        enable  = true
+        topTitle= "OUR UNTOLD STORY"
+        title   = "Blog."
+        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+
+    # Contact Section
+    [Languages.en.params.contact]
+        enable  = true
+        topTitle= "DROP US A NOTE"
+        title   = "Contact Us."
+        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+        address = "14/05, Stockhome <br> Victori Palace , United States"
+        phone   = "(03) 9283 2617"
+        fax     = "+61 3827 3590"
+        facebook= "https://www.facebook.com/"
+        twitter = "https://twitter.com/"
+        linkedin= "https://www.linkedin.com/"
+        dribbble= "https://dribbble.com/"
+        instagram= "https://www.instagram.com/"
+        mapLatitude = "51.507351"
+        mapLongitude= "-0.127758"
+        mapMarker   = "images/marker.png"
+
+    # Call to Action Section on About Page
+    [Languages.en.params.cta]
+        enable  = true
+        bg      = "images/call-to-action/call-to-action-bg-2.jpg"
+        title   = "Let's Create Something Together"
+        subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
+        btnText = "Contact Us"
+
+# We Used Themefisher Icon font for Icon, for more details check this github repository - https://github.com/themefisher/themefisher-font
+
+# Site Menus
+[menu]
+    # Navbar Menus
+    [[menu.nav]]
+        name    = "About"
+        url     = "about"
+        weight  = 2
+    [[menu.nav]]
+        name    = "Services"
+        url     = "services"
+        weight  = 3
+    [[menu.nav]]
+        name    = "Blog"
+        url     = "blog"
+        weight  = 4
+    [[menu.nav]]
+        name    = "Contact"
+        url     = "contact"
+        weight  = 5
+
+    # Footer Service Menu
+    [[menu.service]]
+        name    = "graphicdesign"
+        url     = "service"
+        weight  = 1
+    [[menu.service]]
+        name    = "webdesign"
+        url     = "service"
+        weight  = 2
+    [[menu.service]]
+        name    = "webdevelopment"
+        url     = "service"
+        weight  = 3
+
+    # Footer Quick links Menu
+    [[menu.quicklink]]
+        name    = "partners"
+        url     = "about"
+        weight  = 1
+    [[menu.quicklink]]
+        name    = "about"
+        url     = "about"
+        weight  = 2
+    [[menu.quicklink]]
+        name    = "faqs"
+        url     = "about"
+        weight  = 3
+    [[menu.quicklink]]
+        name    = "badges"
+        url     = "about"
+        weight  = 4
