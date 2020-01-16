@@ -1,420 +1,664 @@
-<!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
 <head>
+  <title>AppKeep | Development - Deployment - Monitoring - Performance - Maintenance</title>
+
+  <!-- Meta -->
   <meta charset="utf-8">
-
-  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
-       More info: h5bp.com/i/378 -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Vitreo | Custom Software and Web Applications</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <!-- Mobile viewport optimized: h5bp.com/viewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-  
-  <link href="favicon.ico" rel="icon" type="image/x-icon" />
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/bootstrap-lightbox.css">
-  <link rel="stylesheet" href="css/vitreo.css">
-  <!-- More ideas for your head here: h5bp.com/d/head-Tips -->
+  <meta name="author" content="">
 
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.png">
 
-  <!-- For the sticky footer -->
-	<!--[if IE 7]><style type="text/css">#sf-wrapper {display:table;height:100%}</style><![endif]-->
+  <!-- Web Fonts -->
+  <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
 
-	<!--[if lte IE 8]>
-		<link rel="stylesheet" href="css/ancient.css">
-		<script src="js/cufon.js"></script>
-		<script src="js/Lato_400-Lato_900-Lato_700-Lato_italic_900.font.js"></script>
-		<script>
-			Cufon.replace('h1');
-		</script>
-	<![endif]-->
+  <!-- CSS Global Compulsory -->
+  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- All JavaScript at the bottom, except this Modernizr build.
-       Modernizr enables HTML5 elements & feature detects for optimal performance.
-       Create your own custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="extras/h5bp/js/libs/modernizr-2.5.3.min.js"></script>
+  <!-- CSS Header and Footer -->
+  <link rel="stylesheet" href="assets/css/headers/header-v6.css">
+  <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
 
-  
-<script type="text/javascript">
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="assets/plugins/animate.css">
+  <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+  <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/plugins/layer-slider/layerslider/css/layerslider.css">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-33626890-1']);
-  _gaq.push(['_trackPageview']);
+  <link rel="stylesheet" href="assets/plugins/parallax-slider/css/parallax-slider.css">
+  <link rel="stylesheet" href="assets/plugins/fancybox/source/jquery.fancybox.css">
+  <link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  <!-- CSS Theme -->
+  <link rel="stylesheet" href="assets/css/theme-colors/appkeep-colors.css" id="style_color">
+  <link rel="stylesheet" href="assets/css/theme-skins/dark.css">
 
-</script>
+  <!-- CSS Customization -->
+  <link rel="stylesheet" href="assets/css/custom.css">
 </head>
-<body>
-  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
-       chromium.org/developers/how-tos/chrome-frame-getting-started -->
-  <!--[if lt IE 7]>
-    <link href="css/bootstrap.ie6.css" rel="stylesheet">
-  	<p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
-  <![endif]-->
 
-  <header>
-  		<div class="navbar navbar-fixed-top">
-  			<div class="navbar-inner">
-  				<div class="container">
-  				 
-  					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</a>	
-
-  					<a href="body" class="brand"><img src="img/logo.png" alt="logo"></a>
-
-  					<div class="nav-collapse">
-  						<ul class="nav pull-right nav_links">
-	  						<li><a href="#about_us">about</a></li>
-	  						<li><a href="#services">services</a></li>
-	  						<li><a href="#case_studies">case studies</a></li>
-	  						<li><a href="#contact">contact</a></li>
-  						</ul>
-  					</div>
-  				</div>
-  			</div>
-  		</div>
-  	</header>
-
-<div id="sf-wrapper"> 
-	<div class="container main"> 
-
-		<section id="landing">
-
-			<div class="row-fluid">
-				<div class="span12">
-					<div id="headline">
-						<h1><em>Real</em> solutions for the <em>real</em> world</h1>
-						<h1 class="caps">custom web applications for business</h1>
-					</div>
-				</div>
-			</div>
-
-			<div class="row-fluid" id="message">
-				<div class="span12">
-					<h2>Your Partner from <em>Vision to Validation</em></h2>
-					<p>At Vitreo, our business is our clients' business. We employ a holistic, transparent approach to software development involving our clients throughout the development process. We deliver working software early and often, and collect continuous feedback. You will always know that your project is on track because you will see continual progress and have the freedom to make adjustments when necessary. <strong>With a clear view of how your project is progressing, you will have the information you need to ensure success.</strong></p>
-					<a href="#services" class="pull-right">View our services</a>
-				</div>
-			</div>
-			<div class="row-fluid">	
-				<div class="span4">
-								<h4>Vision</h4>
-								<p>Your business must be able to understand and anticipate the future needs of your market. Your business applications must be able to adapt to your needs. We strive to learn everything we can about your goals so that we can become a proactive partner in realizing them.<strong> Our primary objective is to understand and help your realize your vision.</strong></p>
-        </div>
-
-				<div class="span4">
-								<h4>Velocity</h4>
-								<p>
-									Great vision is nothing without the determination and skill to act upon it, and speed-to-market is often critical. You have an idea, need, or goal and you need it to be realized within weeks, sometimes days — not months or years. <strong>Vitreo uses agile development processes to deliver innovative solutions to our clients and their customers as rapidly as possible</strong>.
-								</p>
-							</div>
+<body class="header-fixed">
 
 
-				<div class="span4">
-								<h4>Validation</h4>
-								<p>You are investing in your vision and you need to be sure you will achieve your goals. Our clients are directly involved and aware of the status of their projects at all times. End user feedback is gathered early and often. <strong> Vitreo will provide you with the information and metrics you need to know your project will be successful — long before you've crossed the finish line.</strong></p>
-							</div>
-			</div>   
-		</section>
+  <div class="wrapper">
+    <!--=== Header v6 ===-->
+    <div class="header-v6 header-dark-transparent header-sticky">
+      <!-- Navbar -->
+      <div class="navbar mega-menu" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="menu-container">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
 
-		<section id="about_us">
-			<div class="row-fluid">
-				<div class="span12">
-					<hr>
-					<h1>About us</h1>
-				</div>
-			</div>
+            <!-- Navbar Brand -->
+            <div class="navbar-brand">
+              <a href="index.html">
+                <img class="default-logo" src="myassets/img/vitreo-logo-vert-dark.png" alt="Logo">
+                <img class="shrink-logo" src="myassets/img/vitreo-logo-vert-dark.png" alt="Logo">
+              </a>
+            </div>
+            <!-- ENd Navbar Brand -->
 
-			<div class="row-fluid">
-				<div class="span1"></div>
-				<div class="span10 hero-unit" id="etymology">
-					<h4>Vitreo</h4>
-					<p>
-						Vitreo was inspired by the latin root vitre which means <em>glass-like</em> or <em>transparent.</em> We have seen so much frustration and failure under the traditional <em>Black Box approach</em> to software development - where a development team gathers requirements and goes off to implement the project in near isolation from the client or customer. Too often the end result is not what anyone expected or hoped for but by the time they realize this, it is almost always too late. <em>Deadlines are missed, budgets are blown</em>, and no one is happy. We feel there is a better way. We believe the development process should be transparent. <em>Clients should be directly involved.</em> Only by understanding the process and seeing the progress of your project can you make the critical decisions and adjustments that will make it a <em>success</em>.
-					</p>
-					<br>
-					<h4>Our approach</h4>
-					<p>
-						At Vitreo, <em>our business is our clients’ business</em>. To us this has two equally important meanings. We feel it is our job to understand your business and your vision so that we can help you achieve your goals. We also feel it is our responsibility to provide our clients with full visibility into our process and the work we are doing for them. We feel that this openness is critical in our partnership with our clients and can provide both sides with the insight and knowledge they need to <em>make the right decisions and ensure success.</em>
-					</p>
-				 <hr>					
-				</div> 
-			</div>
-		</section>
+          </div>
 
-		<section id="services">
-			<div class="row-fluid">
-				<div class="span12">
-					<hr>
-					<h1>Services</h1>
-				</div>
-			</div>
-
-			<div class="row-fluid">
-				<div class="span12" id="solutions">
-					<h3>Creative Tools for your Business</h3>
-					<h4>Customized Solutions</h4>
-					<p>Sometimes, there just isn't an off-the-shelf solution that meets your company's needs. More often, those
-          solutions require customization, configuration, and consultation by the vendor and still don't align well with
-          your business processes. In these cases, a well designed custom application can be an excellent investment. At Vitreo, we listen to our customers' needs, review their business processes, and assist them in designing simple, powerful, and effective solutions that help their business run more efficiently, and become more profitable.</p>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span4">
-					<h4>Application Development</h4>
-					<p>Our primary strength is helping our clients translate their visions into software solutions. Our wide breadth of experience across many industries and technologies provides our clients with a unique perspective on how to best accomplish their goals. Our rapid, agile development process enables our clients to see results quickly and make adjustments early and efficiently — saving time and money.</p>
-				</div>
-				<div class="span4">
-					<h4>Technology</h4>
-					<p>Our team has experience with a wide variety of technologies. The list below does not represent every technology we've ever used - we don't think you'd want to read that anyway. (Yes, we've done Perl in the past but we don't really want to do that again!)</p>
-					<ul>
-						<li>ASP.NET & Microsoft .NET Framework</li>
-						<li>HTML 5 and CSS 3</li>
-            <li>Javascript:
-              <ul>
-                <li>Ajax</li>
-                <li>jQuery</li>
-                <li>Backbone.js</li>
-                <li>Google Maps</li>
-                <li>and more...</li>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <div class="menu-container">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a href="#expertise">
+										Expertise
+                  </a>
+                </li>
+                <li class="dropdown">
+                  <a href="#about">
+										About
+                  </a>
+                </li>
+                <li class="dropdown">
+                  <a href="#projects">
+									  Projects
+                  </a>
+                </li>
+                <li class="dropdown active">
+                  <a href="#contact">
+										Contact
+                  </a>
+                </li>
               </ul>
-            </li>
-						<li>Ruby and Ruby on Rails</li>
-						<li>Java/J2EE</li>
-						<li>Microsoft SQL Server, MySQL, MongoDB, RavenDB</li>
-					</ul>
-				</div>
-				<div class="span4">
-					<h4>User Experience</h4>
-					<p>At Vitreo, users are at the center of all our decisions. Whether the users are our clients, their employees, their customers, or all of the above - no application can be successful unless it helps users efficiently achieve their goals. Emerging and evolving technologies are making it increasingly possible to give users a responsive, intuitive experience in any application whether it be on the web or on their desktop. We always have an eye on the latest technologies so that we can leverage them where applicable in our solutions to give our clients a competitive advantage.</p>
-				</div>
-			</div>
-
-		</section>
-
-		<section id="case_studies">
-			<div class="row-fluid">
-				<div class="span12">
-					<hr>
-					<h1>Case studies</h1>
-				</div>
-			</div>
-
-			<div class="row-fluid case">
-				<div class="span4">
-          <h4 class="case">Local experts with global connections.</h4>
-          <div class="cs_wrapper">
-            <img src="img/case_studies/sothebys/sothebys_cs_atlas_prop_profile1.jpg" class="case_img">
+            </div>
           </div>
-						<p><strong>Sotheby’s International Realty</strong> (SIR) is a global network of realty offices serving select metropolitan and resort markets in many of the of the world’s most sought-after locations. From spacious condominiums with Central Park views in Manhattan to sprawling ranches in Jackson Hole, Wyoming, you can find it all on their public website, <a href="http://sothebyshomes.com">SothebysHomes.com</a>.</p>
-            <p>The backbone behind SothebysHomes.com, as well as most of SIR’s online marketing, is an inventory and marketing management application called Atlas. Prior to founding Vitreo, Vitreo employees were responsible for the technical design and implementation of Atlas, and SIR has engaged us to continue maintaining and enhancing the application.</p>
-            <p>Atlas is a powerful application that enables SIR employees across the world to manage information regarding their home listings, global offices, and agents. The information is then used to feed SothebysHomes.com as well as other major real estate web sites and publications such as Realtor.com, New York Times, and PrimeLocation.com. Each day the system receives a new feed of listings from Sotheby’s parent company’s system, and marketing information must be added via Atlas. Atlas provides a user dashboard that keeps users informed of which Listings require their attention. Custom rules are applied to all data to ensure that only complete, quality information is approved and distributed. Atlas provides many custom features including mapping properties with Google Maps, fine-tuning the map placement, and management of photos for listings. In addition, SIR corporate and executive users use the system to monitor inventory and run reports on company performance.</p>
-</div>
-				<div class="span4">
-					<h4 class="case">Redefining the role of the traditional benefits broker.</h4>
-          <div class="cs_wrapper">
-            <img src="img/case_studies/healthfirst/healthfirst_cs_mngmnt_portal1.jpg" class="case_img"></a>
-          </div>
-          <p><strong>HealthFirst Benefits</strong> is a full-service employee benefits management firm providing all aspects of benefits management to employers and their employees. HealthFirst came to Vitreo with a desire to stay ahead of their competitors by providing easy on-line benefits management services to their clients. “Vitreo came highly recommended, but still I was skeptical,” says Richard Cusack, President of HealthFirst. “The cost of buying an off-the-shelf system was prohibitive and I didn’t think we could afford a custom built version of what we wanted.”</p>
-          <p>Vitreo helped HealthFirst prioritize their ideas based on what would provide them the most business value. Some of the most valuable features identified were:
-        <ul>
-          <li>Employers should be able to easily add/remove employees to/from their benefit plans</li>
-          <li>All users should be able to easily access documents pertaining to their benefits</li>
-          <li>All users should be able to easily submit a customer service request to HealthFirst</li>
-          <li>HealthFirst administrators should be able to administer employers, benefit plans, and documents for the
-          system</li>
-        </ul></p>
-        <p>Together we were able to design a streamlined application that allowed HealthFirst to meet their goals well within their budget. “Vitreo was awesome. The project was completed under budget and under the timeframe and is still performing for us and our clients today.”</p>
+          <!--/navbar-collapse-->
         </div>
-				<div class="span4">
-					<h4 class="case">Stock imagery and other stimuli for creative work</h4>
-          <div class="cs_wrapper">
-            <img src="img/case_studies/stimuluxe/stimuluxe_cs_image_view1.jpg" class="case_img">
+      </div>
+      <!-- End Navbar -->
+    </div>
+    <!--=== End Header v6 ===-->
+
+    <!--=== Full Height Youtube Video ===-->
+    <div class="bg-color-darker">
+      <div id="promo-video" class="fullheight video-business-img1">
+
+        <div class="container valign__middle text-center">
+          <img class="default-logo" src="myassets/img/vitreo-logo-horizontal.png" alt="Logo">
+          <p class="color-light margin-bottom-10 animated fadeInUp wow" data-wow-duration="1.5s" data-wow-delay=".5s"
+          style="font-size: 18px; font-weight: 25px; font-weight: 400; padding: 3px 0;">
+            TECHNICAL LEADERSHIP - CUSTOM DEVELOPMENT - CLOUD EXPERTISE
+          </p>
+          <h2 class="color-light animated fadeInUp wow margin-bottom-20" data-wow-duration="1.5s" data-wow-delay="1s"
+          style="font-size: 60px; line-height: 63px; font-weight: 600; border-bottom: solid 2px #fff; border-top:
+            solid 2px #fff; display: inline-block; padding: 7px 0;">YOUR PARTNER FROM VISION TO VALIDATION</h2>
+          <p class="color-light font-open-sans margin-bottom-20 animated fadeInUp wow" data-wow-duration="1.5s"
+          data-wow-delay="1.5s" style="font-size: 18px; font-weight: 400;">
+            We focus on your software so you can focus on your business.
+          </p>
+          <div class="animated fadeInUp wow" data-wow-duration="1.2s" data-wow-delay="2s">
+            <a href="#expertise" class="btn-u btn-u-xs btn-brd  btn-brd-hover btn-u-light btn-u-block margin-right-10">LEARN MORE</a>
+            <a href="#contact" class="btn-u btn-u-xs btn-brd  btn-brd-hover btn-u-light btn-u-block">CONTACT US</a>
           </div>
-						<p><strong>Stimuluxe</strong>’s initial goal was to provide a unique experience for purchasing stock imagery online that was aimed specifically at graphic designers and creative professionals. Vitreo helped Stimuluxe combine the common features of a stock photography e-commerce site with their unique vision and image licensing offerings.</p>
-            <p>Stimuluxe’s initial goal was to provide a unique experience for purchasing stock imagery online that was
-            aimed specifically at graphic designers and creative professionals. Vitreo helped Stimuluxe combine the
-            common features of a stock photography e-commerce site with their unique vision and image licensing
-            offerings.</p>
-            <p> Our solution included:
-            <ul>
-              <li>Online searching and browsing of digital imagery</li>
-              <li>Free low-resolution, watermarked, downloadable images for trial use in “comp” work</li>
-              <li>Ability for users to manage a “Folio,” or wishlist, of images they are interested in</li>
-              <li>Custom shopping cart and secure checkout functionality with immediate digital downloads of purchased
-              images</li>
-              <li>Two distinct image licenses and price structures: Royalty-Free and Stimuluxe own FlexRight &153;
-              licensing</li>
+        </div>
+      </div>
+    <div><a name="expertise"></a></div>
+    </div>
+    <!--=== End Full Height Youtube Video ===-->
+
+    <!--=== Content Part ===-->
+    <div class="content-md">
+      <div class="container">
+        <!-- Service Box -->
+        <div class="row text-center marketing">
+          <div class="col-md-4">
+            <img alt="" src="myassets/img/icons/roadmap.png" class="image-md margin-bottom-20">
+            <h1 class="title-v3-md margin-bottom-10">Road Mapping</h1>
+            <div class="md-margin-bottom-50 text-left">
+              <p><b>You've got a vision for where your business needs to be, and you need technical expertise to help you
+                get there.</b>
+                <ul>
+                  <li>Brainstorm your idea</li>
+                  <li>Research your target market</li>
+                  <li>Idenitify a Minimum Viable Product (MVP)</li>
+                  <li>Define project scope</li>
+                  <li>Map out delivery phases</li>
+                  <li>Custom development</li>
+                </ul>
+                <!--
+              Whether it's taking a new idea from concept to delivery, or getting your existing technology ready to meet
+              tomorrow's challenges, we have the experience to help you. 
               </p>
-              <p>Stimuluxe is currently working with Vitreo on the next phase of their web site which will expand beyond
-              digital imagery and offer a variety of products and services designed to stimuluate and inspire creative
-              professionals.</p>  
+              <p>Our system architects have led teams and delivered solutions across a wide range of industries and
+              technologies.  We can help you develop your road map to get you where you need to go, and deal with the
+              inevitable obstacles and detours along the way.</p>
+              -->
+            </div>
+          </div>
+          <div class="col-md-4 flat-service">
+            <img alt="" src="myassets/img/icons/airplane.png" class="image-md margin-bottom-20">
+            <h2 class="title-v3-md margin-bottom-10">Launch Ready</h2>
+            <div class="flat-service md-margin-bottom-50 text-left">
+              <p>
+              <b>You're ready to launch your app, or perhaps you already have. Now comes the hard part.</b>
+                <ul>
+                  <li>Cloud architecture</li>
+                  <li>Build and deploy pipeline</li>
+                  <li>Monitoring and reporting</li>
+                  <li>Automated testing</li>
+                  <li>Release planning</li>
+                  <li>Version management</li>
+                </ul>
+              </p>
+                <!--
+              <p>Once you've built an app, it can feel like the hard part is over. But software is always growing
+              and changing, and requires support and monitoring. Without solid systems and processes for things like change
+              management, automated builds, deployments and monitoring, your ability to develop new features and adapt to
+              changing requirements will be severely limited.
+              </p>
+              <p>
+              We can provide analysis and guidance that will improve your ability to ship software faster, and spend less
+              time on distractions and repetitive tasks.
+              -->
+
+            </div>
+          </div>
+          <div class="col-md-4 flat-service">
+            <img alt="" src="myassets/img/icons/lifesaver.png" class="image-md margin-bottom-20">
+            <h2 class="title-v3-md margin-bottom-10">App Rescue</h2>
+            <div class="flat-service text-left">
+              <p><b>Your developers are working hard to move your business forward, but problems inevitably arise.</b>
+                <ul>
+                  <li>Performance analysis and tuning</li>
+                  <li>Infrastructure assessment</li>
+                  <li>Bug tracking and analysis</li>
+                  <li>Security audit</li>
+                  <li>Developer training</li>
+                  <li>Process improvement</li>
+                </ul>
+                <!--
+              <p>Your developers are working hard to keep up with the demands of the business and your customers. With 
+              any software, problems inevitably arise - things slow down, bugs pop up, complexity grows and changes become harder
+              than they need to be. 
+              </p>
+              <p>
+              Identifying performance bottlenecks, defects, and vulnerabilities can requires a different skillset
+              than building new features. Whether for a short term rescue, or a retainer agreement, we can help you
+              respond quickly to distracting issues as they arise and keep you focused on your goals.</p>
+              -->
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <a name="about"></a>
+        <!-- End Service Box -->
+      </div>
+      <!--/container -->
+
+      <div class="bg-color-light">
+        <div class="container content-sm">
+          <div class="row">
+            <div class="col-md-6 md-margin-bottom-50">
+              <img alt="" src="myassets/img/dashboard_computer.png" class="img-responsive">
+            </div>
+            <div class="col-md-6">
+              <br>
+              <br>
+              <br>
+              <div class="headline-left margin-bottom-30">
+                <h2 class="headline-brd">WE ARE YOUR TECHNOLOGY PARTNERS</h2>
+          <p>We treat our clients as partners and our goal is to help them with their business in whatever way we can.
+          Sometimes all that's needed is tweaking an existing process or sharing some of our skills and experience through training.
+          Other times they need us to roll up our sleeves and build out some software to help them get the job done.
+          </p>
+          <p>
+          We're motivated by solving problems and removing obstacles for our clients. You know your business, we know
+          technology. Together, we can find the best path toward achieving your goals.</p>
+              </div>
+              <ul class="list-unstyled lists-v2 margin-bottom-30">
+                <li><i class="fa fa-check"></i>We believe in transparency and mutual success</li>
+                <li><i class="fa fa-check"></i>We work within your budget to deliver the right solution</li>
+                <li><i class="fa fa-check"></i>We take a holistic approach - building software is not always the answer</li>
+              </ul>
+            </div>
+            <!--/end row-->
+          </div>
+        </div>
+        <a name="projects"></a>
+      </div>
+      <div class="container content-sm">
+        <div class="headline-center margin-bottom-60">
+          <h2>Recent Projects</h2>
+        </div>
+        <!--/end Headline Center-->
+
+        <!-- Portfolio Box -->
+        <ul class="list-unstyled row portfolio-box">
+          <li class="col-sm-4 md-margin-bottom-50">
+            <div class="headline-left margin-bottom-10">
+              <h3 class="headline-brd">Scaling Out To The Cloud</h3>
+            </div>
+            <!--						<small class="project-tag"><i class="fa fa-tag"></i><a href="#">Technology</a>, <a
+  href="#">Business</a></small> -->
+            <h5>Migrate your applications to cloud-based infrastructure in a predictable, standardized way.</h5>
+            <p>One of our clients was feeling the pain of outdated infrastructure, a growing application portfoio
+            and a hodge-podge of deployment tactics used by their developer. <strong>They needed to scale, 
+              but didn't want to just "forklift" their current problems into the cloud.</strong>  
+            <p>We helped them analyze and document their current infrastructure and map out a cloud
+            migration strategy that would minimize disruption during the process.
+            </p>
+            <p>In addition, we helped them identify best-of-breed tools and processes to standardize the
+            way they build, integrate, and deploy their applications, even across different programming languages and 
+            platforms.  Standardizing and automating much of their software delivery pipeline allowed disparate teams
+            to follow a common process and understand how their work integrated with their entire application portfolio.
+            </p>
+          </li>
+          <li class="col-sm-4 md-margin-bottom-50">
+            <div class="headline-left margin-bottom-10">
+              <h3 class="headline-brd">Delivering Millions of High-Res Images</h3>
+            </div>
+            <h5>Your images, any size, anywhere in the world - fast.</h5>
+            <!--						<small class="project-tag"><i class="fa fa-tag"></i><a href="#">Technology</a>, <a
+  href="#">Business</a></small> -->
+            <p>For one of our clients in the real estate industry, their photos are by far their most
+              important asset for marketing. Their agents upload high resolution images which
+              are used all over the web, and viewed by customers all over the world. Their home-grown
+              solution was bursting at the seams, and they knew they needed to move to a cloud-based
+              solution that could grow along with them.</p>
+            <p>
+              <strong>Using the cloud offerings from Amazon Web Services, we updated their photo management and delivery
+              systems to store all their images in the cloud, to generate all the sizes they need from retina displays 
+              to thumbnails using a Content Distribution Network to enable fast image delivery globally.</strong> 
+            </p>
+            <p>
+              Our system used Elastic Beanstalk, Cloudfront, S3, and AWS Lambda to create a completely scalable
+              solution that will never have our clients sweating about outgrowing their resources
+              again!
+            </p>
+          </li>
+          <li class="col-sm-4">
+            <div class="headline-left margin-bottom-10">
+              <h3 class="headline-brd">Single Sign-On</h3>
+            </div>
+            <!--						<small class="project-tag"><i class="fa fa-tag"></i><a href="#">Technology</a>, <a
+  href="#">Business</a></small> -->
+            <p>Our client asked us to help them build an integrated, Single Sign-On solution to
+              enable their employees world-wide to log in once and have seamless access to
+              all the applications, services, and APIs they use on a daily basis.
+            </p>
+            <p>
+              Leveraging open source and <a href="">Open ID Connect</a> - a standard identity
+              and authentication protocol promoted by Google and Microsoft among others - we
+              built and deployed a customized solution that integrated with our client's Active
+              Directory servers to allow their employees to use their corporate logins to access
+              resources from anywhere.
+            </p>
+            <p>
+              <strong>We helped them update a variety of ASP.NET, PHP, and Node.js applications - even
+              some of their partners' applications - to use the Single Sign-On service as the primary point
+              of authentication</strong>. We were able to securely give each application only the information
+              it needed, while saving their employees the hassle of maintaining multiple logins
+              and separate accounts.
+            </p>
+          </li>
+        </ul>
+        <!-- End Portfolio Box -->
+      </div>
+      <!--/end container-->
+
+<!--
+      <div class="container">
+        <div class="headline-left margin-bottom-40">
+          <h2 class="headline-brd">Latest Shots</h2>
+        </div>
+
+        <div class="row margin-bottom-60">
+          <div class="col-sm-6">
+            <div class="owl-carousel-v5">
+              <div class="owl-slider-v5">
+                <div class="item">
+                  <img class="full-width img-responsive" src="assets/img/main/img12.jpg" alt="">
+                </div>
+                <div class="item">
+                  <img class="full-width img-responsive" src="assets/img/main/img16.jpg" alt="">
+                </div>
+                <div class="item">
+                  <img class="full-width img-responsive" src="assets/img/main/img22.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <h3>Justo cras odio apibus ac afilisi</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta ipsum vel mi
+              gravida mattis. Ut sit amet laoreet diam. Fusce iaculis sollicitudin purus, in
+              tristique urna. Suspendisse potenti. Fusce non sem efficitur leo fermentum porttitor
+              ut vitae orci. Aliquam erat volutpat.</p>
+            <br>
+            <p>Sed consectetur blandit ornare. Etiam at ante est. Nunc sed luctus ipsum, eu tincidunt
+              justo. Sed id venenatis tellus. Mauris a cursus dolor. Maecenas sed magna non
+              est interdum sollicitudin eget vitae ex. Ut eget lacus lorem.</p>
+            <br>
+            <button class="btn-u text-uppercase" type="button">View More</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flat-testimonials bg-image-v1 parallaxBg margin-bottom-60">
+        <div class="container">
+          <div class="headline-center headline-light margin-bottom-60">
+            <h2>What People Are Saying</h2>
+            <p>Integer odio ligula, tincidunt id volutpat et, imperdiet eget mi. Quisque laoreet
+              porttitor turpis sed <a href="#">fermentum</a>. Nullam sodales blandit nisi, tristique
+              tempor nunc hendrerit at. Sed posuere mollis orci</p>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="flat-testimonials-in md-margin-bottom-50">
+                <img alt="" src="assets/img/team/img1-sm.jpg" class="rounded-x img-responsive">
+                <h3>Anthony Connor</h3>
+                <span class="color-green">Software Developer</span>
+                <p>Proin et augue vel nisi rhoncus tincidunt. Cras venenatis, magna id sem ipsum
+                  mi interduml</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="flat-testimonials-in md-margin-bottom-50">
+                <img alt="" src="assets/img/team/img2-sm.jpg" class="rounded-x img-responsive">
+                <h3>Angela Danil</h3>
+                <span class="color-green">Web Designer</span>
+                <p>Proin et augue vel nisi rhoncus tincidunt. Cras venenatis, magna id sem ipsum
+                  mi interduml</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="flat-testimonials-in">
+                <img alt="" src="assets/img/team/img3-sm.jpg" class="rounded-x img-responsive">
+                <h3>Anthony Connor</h3>
+                <span class="color-green">Software Developer</span>
+                <p>Proin et augue vel nisi rhoncus tincidunt. Cras venenatis, magna id sem ipsum
+                  mi interduml</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="headline-center margin-bottom-60">
+          <h2>What We Provide</h2>
+          <p>Integer odio ligula, tincidunt id volutpat et, imperdiet eget mi. Quisque laoreet
+            porttitor turpis sed <a href="#">fermentum</a>. Nullam sodales blandit nisi, tristique
+            tempor nunc hendrerit at. Sed posuere mollis orci</p>
+        </div>
+
+        <div class="row margin-bottom-40">
+          <div class="col-md-4">
+            <div class="content-boxes-v5 margin-bottom-30">
+              <i class="rounded-x icon-layers"></i>
+              <div class="overflow-h">
+                <h3 class="no-top-space">Responsive Layout</h3>
+                <p>Proin et augue vel nisi rhoncus tincidunt. Cras venenatis</p>
+              </div>
+            </div>
+            <div class="content-boxes-v5 md-margin-bottom-30">
+              <i class="rounded-x icon-settings"></i>
+              <div class="overflow-h">
+                <h3 class="no-top-space">Color Options</h3>
+                <p>Proin et augue vel nisi rhoncus tincidunt. Cras venenatis</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-boxes-v5 margin-bottom-30">
+              <i class="rounded-x icon-earphones-alt "></i>
+              <div class="overflow-h">
+                <h3 class="no-top-space">Outstanding Support</h3>
+                <p>Proin et augue vel nisi rhoncus tincidunt. Cras venenatis</p>
+              </div>
+            </div>
+            <div class="content-boxes-v5 md-margin-bottom-30">
+              <i class="rounded-x icon-user "></i>
+              <div class="overflow-h">
+                <h3 class="no-top-space">User Friendly</h3>
+                <p>Proin et augue vel nisi rhoncus tincidunt. Cras venenatis</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-boxes-v5 margin-bottom-30">
+              <i class="rounded-x icon-wrench"></i>
+              <div class="overflow-h">
+                <h3 class="no-top-space">Customizable Design</h3>
+                <p>Proin et augue vel nisi rhoncus tincidunt. Cras venenatis</p>
+              </div>
+            </div>
+            <div class="content-boxes-v5 md-margin-bottom-30">
+              <i class="rounded-x icon-star"></i>
+              <div class="overflow-h">
+                <h3 class="no-top-space">Free Updates</h3>
+                <p>Proin et augue vel nisi rhoncus tincidunt. Cras venenatis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      -->
+    <!--=== Footer Version 1 ===-->
+    <div class="footer-v1">
+      <a name="contact"></a>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <a name="contact"></a>
+            <div class="col-md-3 map-img md-margin-bottom-40">
+              <div class="headline">
+                <h2>Contact Information</h2>
+              </div>
+              <address class="md-margin-bottom-40">
+                Vitreo, LLC<br />
+								141 E. Glenside Ave.<br />
+								2nd Floor<br />
+                Glenside, PA 19038<br />
+                Phone: <a href="tel:+12155863965">215-586-3965</a><br />
+								Email: <a href="mailto:hello@vitreo.co" class="">hello@vitreo.co</a>
+							</address>
+            </div>
+            <div class="col-md-6 map-img md-margin-bottom-40">
+              <div class="headline">
+                <h2>Contact Form</h2>
+              </div>
+              <form class="needs-validation" novalidate="" method="post"><input type="hidden" name="form-name" value="form 1">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="firstName">*First Name</label>
+                    <input type="text" class="form-control" name="firstName" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="lastName">*Last Name</label>
+                    <input type="text" class="form-control" name="lastName" required>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="subject">*Company</label>
+                    <input type="text" class="form-control" name="company" required>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="subject">Title</label>
+                    <input type="text" class="form-control" name="title" required>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="email">*Email</label>
+                    <input type="email" class="form-control" name="email" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="email">Phone</label>
+                    <input type="text" class="form-control" name="phone">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="subject">Subject</label>
+                    <input type="text" class="form-control" name="subject">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="message">*Message</label>
+                    <textarea class="form-control" name="message" rows="4" required></textarea>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- old footer went here --> 
+        </div>
+      </div>
+      <!--/footer-->
+
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>
+                2020 &copy; All Rights Reserved.
+                <!-- <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> -->
+              </p>
             </div>
 
-			</div>						
+            <!-- Social Links 
+            <div class="col-md-6">
+              <ul class="footer-socials list-inline">
+                <li>
+                  <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
+                    <i class="fa fa-skype"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
+                    <i class="fa fa-pinterest"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
+                    <i class="fa fa-dribbble"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+           -->
+          </div>
+        </div>
+      </div>
+      <!--/copyright-->
+    </div>
+    <!--=== End Footer Version 1 ===-->
+  </div>
+  <!--/wrapper-->
 
-		</section>
+  <!-- JS Global Compulsory -->
+  <script src="assets/plugins/jquery/jquery.min.js"></script>
+  <script src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+  <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <!-- JS Implementing Plugins -->
+  <script src="assets/plugins/back-to-top.js"></script>
+  <script src="assets/plugins/smoothScroll.js"></script>
+  <script src="assets/plugins/jquery.parallax.js"></script>
+  <script src="assets/plugins/wow-animations/js/wow.min.js"></script>
+  <script src="assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+  <!-- JS Customization -->
+  <script src="assets/js/custom.js"></script>
+  <!-- JS Page Level -->
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/plugins/fancy-box.js"></script>
+  <script src="assets/js/plugins/owl-carousel.js"></script>
+  <script src="assets/js/plugins/style-switcher.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function()
+    {
+      App.init();
+      new WOW().init();
+      App.initParallaxBg();
+      FancyBox.initFancybox();
+      OwlCarousel.initOwlCarousel();
+      StyleSwitcher.initStyleSwitcher();
+    });
+  </script>
+  <!--[if lt IE 9]>
+	<script src="assets/plugins/respond.js"></script>
+	<script src="assets/plugins/html5shiv.js"></script>
+	<script src="assets/plugins/placeholder-IE-fixes.js"></script>
+	<![endif]-->
 
-		<section id="contact">
-			<div class="row-fluid">
-				<div class="span12">
-					<hr>
-					<h1>Contact</h1>
-				</div>
-			</div>
-
-			<div class="row-fluid">
-<div id="wufoo-m7x3s5" class="span6 well">
-Fill out my <a href="http://vitreo.wufoo.com/forms/m7x3s5">online form</a>.
-</div>
-<script type="text/javascript">var m7x3s5;(function(d, t) {
-var s = d.createElement(t), options = {
-'userName':'vitreo', 
-'formHash':'m7x3s5', 
-'autoResize':true,
-'height':'717',
-'async':true,
-'header':'show'};
-s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-s.onload = s.onreadystatechange = function() {
-var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-try { m7x3s5 = new WufooForm();m7x3s5.initialize(options);m7x3s5.display(); } catch (e) {}};
-var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-})(document, 'script');</script>
-				<div class="span6">
-					<h3>Contact Vitreo Today!</h3>
-					<p>Do you have a vision for an application that will make your business more... Profitable? Efficient? Secure? Fun? Are you feeling the pain of slow, antiquated processes that are aching for improvement? Or, are you just having trouble getting your web site to behave across different browsers? No question is too big or small - please feel free to get in touch with us.</p>
-				</div>
-			</div>				
-		</section>
-
-	<footer id="footer">
-		<hr>
-		<p class="pull-right">© 2013 Vitreo, LLC</p>
-  	</footer>
-
-  		<!-- [if lte IE 8]> <script type="text/javascript"> Cufon.now(); </script> <![endif]-->
-
-	  <!-- JavaScript at the bottom for fast page loading -->
-	
-	  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	  <script>window.jQuery || document.write('<script src="extras/h5bp/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-
-	  <!-- scripts concatenated and minified via ant build script-->
-	  <script src="extras/prettify/prettify.js"></script>  
-	  <!-- end scripts-->
-	  
-	  <!-- If you'd rather pick and choose, comment the above and uncomment what you need below -->
-	  <!--script type="text/javascript" src="js/bootstrap-alert.min.js"></script-->
-	  <!--script type="text/javascript" src="js/bootstrap-button.min.js"></script-->
-	  <script type="text/javascript" src="js/bootstrap-collapse.js"></script>
-	  <!--script type="text/javascript" src="js/bootstrap-dropdown.min.js"></script-->
-	  <!--script type="text/javascript" src="js/bootstrap-modal.min.js"></script-->
-	  <!--script type="text/javascript" src="js/bootstrap-modal.min.js"></script-->
-	  <!--script type="text/javascript" src="js/bootstrap-modal.min.js"></script-->
-	  <!--script type="text/javascript" src="js/bootstrap-popover.min.js"></script-->
-	  <!--script type="text/javascript" src="js/bootstrap-scrollspy.min.js"></script-->
-	  <!--script type="text/javascript" src="js/bootstrap-tab.min.js"></script-->
-	  <!--script type="text/javascript" src="js/bootstrap-tooltip.min.js"></script-->
-	  <script type="text/javascript" src="js/bootstrap-transition.js"></script>
-	  <script type="text/javascript" src="js/bootstrap-carousel.js"></script>
-	  <script type="text/javascript" src="js/bootstrap-lightbox.js"></script>
-
-		<script type="text/javascript" charset="utf-8">
-		
-		  $(document).ready(function() {
-		  	$('#myCarousel').carousel();
-		    // smart ass smoothscroll
-		    $('.nav_links a, #message a, .container a.brand').click(function(e){
-		    	e.preventDefault();
-		    	var el = $(this).attr('href').toString();
-		   		 $('html, body').animate({
-			  	  scrollTop: $(el).offset().top
-				}, 500);
-		    });
-
-		    // turn images to lightboxes;
-
-			$('.case_img').each(     
-			    function(i,e){         
-			        var source = $(this).attr('src');  
-			        var fixed = '<a data-toggle="lightbox" href="#demoLightbox'+i+'"><img src="'+ source +'"></a>'+
-								'<div class="lightbox fade" id="demoLightbox'+i+'" style="display: none;">'+
-									'<div class="lightbox-content">'+
-										'<img src="'+source+'">'+
-									'</div>'+
-								'</div>' ;
-			        $(this).parent().append(fixed);
-			        $(this).remove();
-			    }
-			)
-
-		  });
-		</script>
-		<script>
-			$(function()
-			{
-			    if (!Modernizr.input.placeholder)
-			    {
-			        $(this).find('[placeholder]').each(function()
-			        {
-			            if ($(this).val() == '')
-			            {
-			                $(this).val( $(this).attr('placeholder') );
-			            }
-			        });    
-			        $('[placeholder]').focus(function()
-			        {
-			            if ($(this).val() == $(this).attr('placeholder'))
-			            {
-			                $(this).val('');
-			                $(this).removeClass('placeholder');
-			            }
-			        }).blur(function()
-			        {
-			            if ($(this).val() == '' || $(this).val() == $(this).attr('placeholder'))
-			            {
-			                $(this).val($(this).attr('placeholder'));
-			                $(this).addClass('placeholder');
-			            }
-			        });
-			        $('[placeholder]').closest('form').submit(function()
-			        {
-			            $(this).find('[placeholder]').each(function()
-			            {
-			                if ($(this).val() == $(this).attr('placeholder'))
-			                {
-			                    $(this).val('');
-			                }
-			            })
-			        });
-			    }
-			});
-		</script>
-		  
-	  <!-- end scripts -->
-  </div><!-- End .container.main -->
-</div><!-- End #sf-wrapper -->
-
-  <!-- A little ie7- magic -->
-  <script type="text/javascript"> $(function(){if($.browser.msie&&parseInt($.browser.version,10)===6){$('.row div[class^="span"]:last-child').addClass("last-child");$('[class="span"]').addClass("margin-left-20");$(':button[class="btn"], :reset[class="btn"], :submit[class="btn"], input[type="button"]').addClass("button-reset");$(":checkbox").addClass("input-checkbox");$('[class^="icon-"], [class=" icon-"]').addClass("icon-sprite");$(".pagination li:first-child a").addClass("pagination-first-child")}}) </script>
-</div>
 </body>
+
 </html>
