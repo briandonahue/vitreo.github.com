@@ -3,3 +3,9 @@
 .marketing {
   margin-bottom: 40px;
 }
+
+@media (max-width: 600px) {
+  img {
+    width: 100%; // Override width to show only one image in a row on smaller screens
+  }
+}
