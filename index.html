@@ -524,7 +524,13 @@
               <div class="headline">
                 <h2>Contact Form</h2>
               </div>
-              <form name="contact" class="needs-validation" novalidate netlify>
+              <form name="contact" class="needs-validation" netlify-honeypot="address" novalidate netlify>
+                <div style="display: none;">
+                  <div class="form-group col-md-6">
+                    <label for="address">Not to be filled out if you're human:</label>
+                    <input type="text" class="form-control" name="address">
+                  </div>
+                </div>
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="firstName">*First Name</label>
