@@ -524,13 +524,7 @@
               <div class="headline">
                 <h2>Contact Form</h2>
               </div>
-              <form name="contact" class="needs-validation" netlify-honeypot="address" novalidate netlify>
-                <div style="display: none;">
-                  <div class="form-group col-md-6">
-                    <label for="address">Not to be filled out if you're human:</label>
-                    <input type="text" class="form-control" name="address">
-                  </div>
-                </div>
+              <form name="contact" class="needs-validation" data-netlify-recaptcha="true" novalidate netlify>
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="firstName">*First Name</label>
@@ -573,6 +567,11 @@
                   <div class="form-group col-md-12">
                     <label for="message">*Message</label>
                     <textarea class="form-control" name="message" rows="4" required></textarea>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <div data-netlify-recaptcha="true"></div>
                   </div>
                 </div>
                 <div class="form-row">
