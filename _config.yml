@@ -1,0 +1,35 @@
+title: "Vitreo | Leadership - Training - Development"
+tagline: "Build better software."
+description: "Philadelphia based software consultancy providing technical leadership, training and custom development for enterprise & startup clients."
+author: "Vitreo, LLC"
+
+url: "https://vitreo.co" 
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag # https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+  - jekyll-sitemap
+
+exclude: 
+  - resources
+  - notes
+  - TODO.md
+
+defaults:
+  - 
+    scope:
+      path: ""
+    values:
+      image: "/myassets/img/vitreo-logo-dark-400x400.png"
+  - 
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+
+excerpt_separator: <!-- more -->
+
+twitter:
+  username: vitreoco
+  card: summary
