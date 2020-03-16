@@ -1,0 +1,14 @@
+<nav aria-label="Blog navigation">
+  <ul class="pagination">
+    <li class="page-item {% if page.previous == nil %}disabled{% endif %}">
+      <a class="page-link" href="{{ page.previous.url | prepend:site.baseurl }}" 
+        {% if page.previous == nil %} aria-disabled="true" {% endif %}>&laquo; Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="{{ '/' | prepend:site.baseurl }}">Home</a></li>
+    <li class="page-item {% if page.next == nil %}disabled{% endif %}">
+      <a class="page-link" href="{{ page.next.url | prepend:site.baseurl }}"
+        {% if page.previous == nil %} aria-disabled="true" {% endif %}>Next &raquo;</a>
+    </li>
+  </ul>
+</nav>
+
