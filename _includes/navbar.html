@@ -15,9 +15,9 @@
 
             <!-- Navbar Brand -->
             <div class="navbar-brand">
-              <a href="index.html">
-                <img class="default-logo" src="myassets/img/vitreo-logo-vert-dark.png" alt="Logo">
-                <img class="shrink-logo" src="myassets/img/vitreo-logo-vert-dark.png" alt="Logo">
+              <a href="{{ site.baseurl }}">
+                <img class="default-logo" src="/myassets/img/vitreo-logo-vert-dark.png" alt="Logo">
+                <img class="shrink-logo" src="/myassets/img/vitreo-logo-vert-dark.png" alt="Logo">
               </a>
             </div>
             <!-- ENd Navbar Brand -->
@@ -41,6 +41,11 @@
                 <li class="dropdown">
                   <a href="{{'/#projects' | prepend: site.baseurl}}">
 									  Projects
+                  </a>
+                </li>
+                <li class="dropdown">
+                  <a href="{{'/articles.html' | prepend: site.baseurl}}">
+									  Articles
                   </a>
                 </li>
                 <li class="dropdown">
