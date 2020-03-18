@@ -1,5 +1,5 @@
 title: "Vitreo | Leadership - Training - Development"
-tagline: "Build better software."
+tagline: "SOFTWARE EXPERTISE - PRODUCT STRATEGY - TECHNICAL LEADERSHIP"
 description: "Philadelphia based software consultancy providing technical leadership, training and custom development for enterprise & startup clients."
 author: "Vitreo, LLC"
 
@@ -19,7 +19,7 @@ defaults:
     scope:
       path: ""
     values:
-      image: "/myassets/img/vitreo-logo-dark-400x400.png"
+      image: "/myassets/img/vitreo-og-header@3x.png"
   - 
     scope:
       path: ""
