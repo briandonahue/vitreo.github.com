@@ -3,13 +3,13 @@ title: "(Software) Love in the Time of COVID-19"
 layout: article
 author: briandonahue
 ---
-It's been a scary week and like many of my friends and colleagues, I've been dealing with many sudden work and family changes regarding school closings, working remotely and, of course, a changing economic landscape. If your team or business needs help managing or transitioning to remote software development, I am available to help.
+It's been a scary week. Like many of you, I've been dealing with sudden work and family changes regarding school closings, working remotely and, of course, a changing economic landscape. My schedule has been entirely thrown for a loop. But I also want to keep busy,and be helpful. If your team or business needs help with software development, managing or transitioning to remote software development, I am available and happy to chat.
 
 <!-- more --> 
 
 At Vitreo, I have worked with and managed remote software teams and projects for over a decade. Working remotely comes with unique challenges, but also some real benefits for technology teams. With the right tools and processes in place, it can actually help streamline your delivery process.
 
-We are a small team of passionate and experienced technologists. If there is anything we can help with, we have immediate availability and flexibility to accommodate part-time/ad hoc or full-time engagements that work with your needs and budget.
+I also have a small team of passionate and experienced technologists, ready to assist with longer term projects and goals. We have the availability and flexibility to accommodate part-time/ad hoc or full-time engagements that work with your needs and budget.
 
 Do not hesitate to contact us at [hello@vitreo.co](mailto:hello@vitreo.co) or use the [contact form](#contact) below!
 
