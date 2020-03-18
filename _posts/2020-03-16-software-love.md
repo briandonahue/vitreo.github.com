@@ -3,7 +3,9 @@ title: "(Software) Love in the Time of COVID-19"
 layout: article
 author: briandonahue
 ---
-It's been a scary week. Like many of you, I've been dealing with sudden work and family changes regarding school closings, working remotely and, of course, a changing economic landscape. My schedule has been entirely thrown for a loop. But I also want to keep busy,and be helpful. If your team or business needs help with software development, managing or transitioning to remote software development, I am available and happy to chat.
+It's been a scary week. Like many of you, I've been dealing with sudden work and family changes regarding school closings, working remotely and, of course, the changing economic landscape. My schedule has been completely thrown for a loop. 
+
+But I still have a desire to keep busy and feel useful. I love working with teams that are passionate about building software. If your team or business needs help with software development, managing or transitioning to remote software development, I am available and happy to chat.
 
 <!-- more --> 
 
