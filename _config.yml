@@ -19,7 +19,7 @@ defaults:
     scope:
       path: ""
     values:
-      image: "/myassets/img/vitreo-og-header@3x.png"
+      image: "/myassets/img/vitreo-og-header@3x.jpg"
   - 
     scope:
       path: ""
