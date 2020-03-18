@@ -5,7 +5,7 @@ author: "Vitreo, LLC"
 
 url: "https://vitreo.co" 
 plugins:
-  - jekyll-feed
+  #  - jekyll-feed
   - jekyll-seo-tag # https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
   - jekyll-sitemap
 
